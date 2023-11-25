@@ -1,0 +1,29 @@
+package br.inatel.carros.BMW;
+
+import br.inatel.carros.Carro;
+
+public class BMWX6 extends Carro {
+
+    // Atributos específicos do BMWX6
+    private String teto;
+    private boolean hibrido;
+    private String rodas;
+
+    // Construtor
+    public BMWX6(String montadora, String modelo, String corInterior, String motor, float vmax,
+                 String tracao, String cor, float preco, String chassi, String cambio, int ano,
+                 String teto, boolean hibrido, String rodas) {
+        super(montadora, modelo, corInterior, motor, vmax, tracao, cor, preco, chassi, cambio, ano);
+        this.teto = teto;
+        this.hibrido = hibrido;
+        this.rodas = rodas;
+    }
+
+    // Método para mostrar informações específicas do BMWX6
+    public void mostraInfo() {
+        super.mostraInfo(); // Chama o método da classe pai para exibir informações comuns a todos os carros
+        System.out.println("Teto: " + teto);
+        System.out.println("Híbrido: " + (hibrido ? "Sim" : "Não"));
+        System.out.println("Rodas: " + rodas);
+    }
+}
