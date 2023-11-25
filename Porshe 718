@@ -1,0 +1,29 @@
+package br.inatel.carros.porsche;
+
+import br.inatel.carros.Carro;
+
+public class Porsche718 extends Carro {
+
+    // Atributos específicos do Porsche718
+    private String farol;
+    private String bancos;
+    private String teto;
+
+    // Construtor
+    public Porsche718(String montadora, String modelo, String corInterior, String motor, float vmax,
+                      String tracao, String cor, float preco, String chassi, String cambio, int ano,
+                      String farol, String bancos, String teto) {
+        super(montadora, modelo, corInterior, motor, vmax, tracao, cor, preco, chassi, cambio, ano);
+        this.farol = farol;
+        this.bancos = bancos;
+        this.teto = teto;
+    }
+
+    // Método para mostrar informações específicas do Porsche718
+    public void mostraInfo() {
+        super.mostraInfo(); // Chama o método da classe pai para exibir informações comuns a todos os carros
+        System.out.println("Farol: " + farol);
+        System.out.println("Bancos: " + bancos);
+        System.out.println("Teto: " + teto);
+    }
+}
