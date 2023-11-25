@@ -1,0 +1,32 @@
+package br.inatel.carros.porsche;
+
+import br.inatel.carros.Carro;
+
+public class Porsche911 extends Carro {
+
+    // Atributos específicos do Porsche911
+    private String farol;
+    private String bancos;
+    private String aerofolio;
+    private String suspensao;
+
+    // Construtor
+    public Porsche911(String montadora, String modelo, String corInterior, String motor, float vmax,
+                      String tracao, String cor, float preco, String chassi, String cambio, int ano,
+                      String farol, String bancos, String aerofolio, String suspensao) {
+        super(montadora, modelo, corInterior, motor, vmax, tracao, cor, preco, chassi, cambio, ano);
+        this.farol = farol;
+        this.bancos = bancos;
+        this.aerofolio = aerofolio;
+        this.suspensao = suspensao;
+    }
+
+    // Método para mostrar informações específicas do Porsche911
+    public void mostraInfo() {
+        super.mostraInfo(); // Chama o método da classe pai para exibir informações comuns a todos os carros
+        System.out.println("Farol: " + farol);
+        System.out.println("Bancos: " + bancos);
+        System.out.println("Aerofólio: " + aerofolio);
+        System.out.println("Suspensão: " + suspensao);
+    }
+}
