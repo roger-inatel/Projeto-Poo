@@ -1,0 +1,53 @@
+public class MostraInfoCarro {
+
+    // Atributos do carro
+    private String montadora;
+    private String modelo;
+    private String corInterior;
+    private String motor;
+    private float vmax;
+    private String tracao;
+    private String cor;
+    private float preco;
+    private String chassi;
+    private String cambio;
+    private int ano;
+
+    // Construtor da classe
+    public MostraInfoCarro(String montadora, String modelo, String corInterior, String motor, float vmax,
+                           String tracao, String cor, float preco, String chassi, String cambio, int ano) {
+        this.montadora = montadora;
+        this.modelo = modelo;
+        this.corInterior = corInterior;
+        this.motor = motor;
+        this.vmax = vmax;
+        this.tracao = tracao;
+        this.cor = cor;
+        this.preco = preco;
+        this.chassi = chassi;
+        this.cambio = cambio;
+        this.ano = ano;
+    }
+
+    // Método para mostrar informações sobre o carro
+    public void mostrarInfoCarro() {
+        System.out.println("Montadora: " + montadora);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Cor Interior: " + corInterior);
+        System.out.println("Motor: " + motor);
+        System.out.println("Velocidade Máxima: " + vmax);
+        System.out.println("Tração: " + tracao);
+        System.out.println("Cor: " + cor);
+        System.out.println("Preço: " + preco);
+        System.out.println("Chassi: " + chassi);
+        System.out.println("Câmbio: " + cambio);
+        System.out.println("Ano: " + ano);
+    }
+
+    public static void main(String[] args) {
+        
+        MostraInfoCarro meuCarro = new MostraInfoCarro("Porshe", "Gt3 Rs", "Creme", "4.0 boxer seis cilindros", 296, "Traseira", "Preto", 1920000, "ABC123456", "Manual", 2023);
+
+        meuCarro.mostrarInfoCarro();
+    }
+}
