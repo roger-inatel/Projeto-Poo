@@ -1,0 +1,32 @@
+package br.inatel.carros.BMW;
+
+import br.inatel.carros.Carro;
+
+public class BMWM2 extends Carro {
+
+    // Atributos específicos do BMWM2
+    private String suspensao;
+    private String teto;
+    private String rodas;
+    private String aerofolio;
+
+    // Construtor
+    public BMWM2(String montadora, String modelo, String corInterior, String motor, float vmax,
+                 String tracao, String cor, float preco, String chassi, String cambio, int ano,
+                 String suspensao, String teto, String rodas, String aerofolio) {
+        super(montadora, modelo, corInterior, motor, vmax, tracao, cor, preco, chassi, cambio, ano);
+        this.suspensao = suspensao;
+        this.teto = teto;
+        this.rodas = rodas;
+        this.aerofolio = aerofolio;
+    }
+
+    // Método para mostrar informações específicas do BMWM2
+    public void mostraInfo() {
+        super.mostraInfo(); // Chama o método da classe pai para exibir informações comuns a todos os carros
+        System.out.println("Suspensão: " + suspensao);
+        System.out.println("Teto: " + teto);
+        System.out.println("Rodas: " + rodas);
+        System.out.println("Aerofólio: " + aerofolio);
+    }
+}
